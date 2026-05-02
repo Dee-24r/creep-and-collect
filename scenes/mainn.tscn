@@ -20,7 +20,7 @@ corner_radius_bottom_left = 5
 script = ExtResource("1_4aalk")
 
 [node name="LevelRoot" parent="." unique_id=338196455 instance=ExtResource("3_hrtbl")]
-position = Vector2(-19, -12)
+position = Vector2(18, -8)
 
 [node name="display" type="CanvasLayer" parent="." unique_id=1672631164]
 
