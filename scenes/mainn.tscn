@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://4llfch8j2q8q" path="res://scripts/mainn.gd" id="1_4aalk"]
 [ext_resource type="PackedScene" uid="uid://ctjo2oo8wm3wa" path="res://scenes/levels/level1.tscn" id="3_hrtbl"]
 [ext_resource type="FontFile" uid="uid://cjv6cp62ouy5x" path="res://assets/fontfile/Square-Black.ttf" id="3_p1trg"]
+[ext_resource type="AudioStream" uid="uid://d4ei2by07awta" path="res://assets/sounds/music.mp3" id="4_p1trg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4aalk"]
 bg_color = Color(0.6645613, 0.7370931, 0.7881945, 1)
@@ -62,3 +63,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.024029793, 0.024029795, 0.024029793, 1)
+
+[node name="backgroundMusic" type="AudioStreamPlayer2D" parent="." unique_id=1719012823]
+stream = ExtResource("4_p1trg")
+autoplay = true

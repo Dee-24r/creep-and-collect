@@ -1,9 +1,10 @@
 extends Node2D
+var LASTLEVEL = 3
 var score: int = 0
 var level: int = 1
 var current_level_root:Node = null
-@onready var fade: ColorRect = $display/Fade
 
+@onready var fade: ColorRect = $display/Fade
 @onready var score_label: Label = $display/scorePanel/score_Label
 signal win
 
@@ -26,7 +27,7 @@ func _load_level(level_number: int, first_load: bool, reset_score: bool) -> void
 		score_label.text = "SCORE: 0"
 	if current_level_root:
 		current_level_root.queue_free()
-	
+		
 	var level_path = "res://scenes/levels/level%s.tscn" %level_number
 	current_level_root = load(level_path).instantiate()
 	add_child(current_level_root)
@@ -58,6 +59,11 @@ func _setup_level(level_root: Node) -> void:
 #signals
 func _on_exit_body_entered(body: Node2D)-> void:
 	if body.name == "player":
+		if level >= LASTLEVEL:
+			print("Game completed")
+			_winner()
+			return
+			
 		level+=1
 		body.can_move = false
 		await _load_level(level, false, false)
