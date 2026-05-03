@@ -53,3 +53,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_p1trg")
 theme_override_font_sizes/font_size = 32
 text = "SCORE: 0"
+
+[node name="Fade" type="ColorRect" parent="display" unique_id=2078854843]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.024029793, 0.024029795, 0.024029793, 1)
