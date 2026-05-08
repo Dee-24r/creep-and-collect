@@ -8,6 +8,8 @@ const JUMP_VELOCITY = -850.0
 var alive = true
 var can_move = true
 
+signal player_failed(body)
+
 func _physics_process(delta: float) -> void:
 	#Add animation
 	if !alive:
@@ -18,6 +20,10 @@ func _physics_process(delta: float) -> void:
 	else:
 		animated_sprite_2d.animation = "idle"
 	
+	if global_position.y > 1000:
+		fail()
+		emit_signal("player_failed", self)
+		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

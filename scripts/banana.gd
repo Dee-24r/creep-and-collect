@@ -6,6 +6,9 @@ extends Area2D
 signal collected
 
 func _on_body_entered(_body: Node2D) -> void:
+	if _body.name != "player":
+		return
+		
 	animated_sprite_2d.animation = "collected"
 	collect_sound.play()
 	collected.emit()

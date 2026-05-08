@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://evdwtn1uwyo1" path="res://scenes/banana.tscn" id="5_t7v7a"]
 [ext_resource type="Texture2D" uid="uid://csn25y07ncsa7" path="res://assets/images/flag/Checkpoint (Flag Idle)(64x64).png" id="6_xx6b8"]
 [ext_resource type="PackedScene" uid="uid://dk58co38u7lcm" path="res://scenes/moving_platform.tscn" id="7_f62st"]
+[ext_resource type="FontFile" uid="uid://cjv6cp62ouy5x" path="res://assets/fontfile/Square-Black.ttf" id="8_s45gt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dywbp"]
 texture = ExtResource("2_s45gt")
@@ -249,6 +250,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1seuy"]
 size = Vector2(22.333344, 48.666664)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_heu5o"]
+bg_color = Color(0.13333334, 0.12941177, 0.63529414, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [node name="LevelRoot" type="Node2D" unique_id=338196455]
 scale = Vector2(3, 3)
 
@@ -264,7 +276,7 @@ stretch_mode = 1
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1646633440]
 texture_filter = 1
 position = Vector2(5, 5.333334)
-tile_map_data = PackedByteArray("AAAaAA0AAAAHAAEAAAAaAAwAAAAHAAEAAAAaAAsAAAAHAAEAAAAaAAoAAAAHAAEAAAAaAAkAAAAHAAEAAAAaAAgAAAAHAAEAAAAaAAcAAAAHAAEAAAAaAAYAAAAHAAEAAAAaAAUAAAAIAAEAAAAaAAEAAAAHAAEAAAAaAAAAAAAIAAEAAAAaAP//AAAIAAAAAAAAAP//AAAGAAAAAAABAP//AAAHAAAAAAACAP//AAAHAAAAAAADAP//AAAHAAAAAAAEAP//AAAHAAAAAAAFAP//AAAHAAAAAAAGAP//AAAHAAAAAAAXAP//AAAHAAAAAAAYAP//AAAHAAAAAAAZAP//AAAHAAAAAAAHAP//AAAHAAAAAAAIAP//AAAHAAAAAAAJAP//AAAHAAAAAAAKAP//AAAHAAAAAAALAP//AAAHAAAAAAAMAP//AAAHAAAAAAANAP//AAAHAAAAAAAOAP//AAAHAAAAAAAPAP//AAAHAAAAAAAQAP//AAAHAAAAAAASAP//AAAHAAAAAAATAP//AAAHAAAAAAAUAP//AAAHAAAAAAAVAP//AAAHAAAAAAAWAP//AAAHAAAAAAD//wAAAAAGAAEAAAD//wEAAAAGAAEAAAD//wIAAAAGAAEAAAD//wUAAAAGAAEAAAD//wYAAAAGAAEAAAD//wgAAAAGAAEAAAD//wkAAAAGAAEAAAD//woAAAAGAAEAAAD//wsAAAAGAAEAAAD//wwAAAAGAAEAAAD//w0AAAAGAAEAAAD/////AAAGAAAAAAARAP//AAAHAAAAAAAXAAYAAAAGAAEAAAAZAAUAAAAHAAAAAAAZAAYAAAAHAAEAAAATAAwAAAAGAAAAAAATAA0AAAAGAAEAAAAUAAwAAAAHAAAAAAAUAA0AAAAHAAEAAAAYAAUAAAAHAAAAAAAXAAUAAAAGAAAAAAABAAUAAAAHAAEAAAACAAUAAAAIAAEAAAD//wcAAAAGAAEAAAD//wMAAAAGAAEAAAD//wQAAAAGAAEAAAAAAAUAAAAHAAEAAAACAAQAAAAIAAAAAAABAAQAAAAHAAAAAAAAAAQAAAAHAAAAAAAcAA4AAAATAAAAAAAdAA4AAAARAAAAAAAeAA4AAAASAAAAAAAfAA4AAAATAAAAAAAYAAYAAAAHAAEAAAA=")
+tile_map_data = PackedByteArray("AAAaAA0AAAAHAAEAAAAaAAwAAAAHAAEAAAAaAAsAAAAHAAEAAAAaAAoAAAAHAAEAAAAaAAkAAAAHAAEAAAAaAAgAAAAHAAEAAAAaAAcAAAAHAAEAAAAaAAYAAAAHAAEAAAAaAAUAAAAIAAEAAAAaAAEAAAAHAAEAAAAaAAAAAAAIAAEAAAAaAP//AAAIAAAAAAAAAP//AAAGAAAAAAABAP//AAAHAAAAAAACAP//AAAHAAAAAAADAP//AAAHAAAAAAAEAP//AAAHAAAAAAAFAP//AAAHAAAAAAAGAP//AAAHAAAAAAAXAP//AAAHAAAAAAAYAP//AAAHAAAAAAAZAP//AAAHAAAAAAAHAP//AAAHAAAAAAAIAP//AAAHAAAAAAAJAP//AAAHAAAAAAAKAP//AAAHAAAAAAALAP//AAAHAAAAAAAMAP//AAAHAAAAAAANAP//AAAHAAAAAAAOAP//AAAHAAAAAAAPAP//AAAHAAAAAAAQAP//AAAHAAAAAAASAP//AAAHAAAAAAATAP//AAAHAAAAAAAUAP//AAAHAAAAAAAVAP//AAAHAAAAAAAWAP//AAAHAAAAAAD//wAAAAAGAAEAAAD//wEAAAAGAAEAAAD//wIAAAAGAAEAAAD//wUAAAAGAAEAAAD//wYAAAAGAAEAAAD//wgAAAAGAAEAAAD//wkAAAAGAAEAAAD//woAAAAGAAEAAAD//wsAAAAGAAEAAAD//wwAAAAGAAEAAAD//w0AAAAGAAEAAAD/////AAAGAAAAAAARAP//AAAHAAAAAAAXAAYAAAAGAAEAAAAZAAUAAAAHAAAAAAAZAAYAAAAHAAEAAAATAAwAAAAGAAAAAAATAA0AAAAGAAEAAAAUAAwAAAAHAAAAAAAUAA0AAAAHAAEAAAAYAAUAAAAHAAAAAAAXAAUAAAAGAAAAAAABAAUAAAAHAAEAAAACAAUAAAAIAAEAAAD//wcAAAAGAAEAAAD//wMAAAAGAAEAAAD//wQAAAAGAAEAAAAAAAUAAAAHAAEAAAACAAQAAAAIAAAAAAABAAQAAAAHAAAAAAAAAAQAAAAHAAAAAAAcAA4AAAATAAAAAAAdAA4AAAARAAAAAAAeAA4AAAASAAAAAAAfAA4AAAATAAAAAAAYAAYAAAAHAAEAAAAaAA4AAAAIAAIAAAD//w4AAAAGAAIAAAA=")
 tile_set = SubResource("TileSet_dd0lh")
 
 [node name="player" parent="." unique_id=223711073 instance=ExtResource("3_4vryo")]
@@ -285,7 +297,7 @@ position = Vector2(385.33334, 205)
 [node name="bananas" type="Node2D" parent="." unique_id=28804083]
 
 [node name="banana" parent="bananas" unique_id=985510749 instance=ExtResource("5_t7v7a")]
-position = Vector2(168.66666, 98.66667)
+position = Vector2(183.33333, 103.00001)
 
 [node name="banana2" parent="bananas" unique_id=992249237 instance=ExtResource("5_t7v7a")]
 position = Vector2(280.33334, 15.666668)
@@ -297,13 +309,13 @@ position = Vector2(461.6667, -6.666668)
 position = Vector2(248.66666, 60.666664)
 
 [node name="banana5" parent="bananas" unique_id=1232041980 instance=ExtResource("5_t7v7a")]
-position = Vector2(458, 104)
+position = Vector2(327.66666, 96.333336)
 
 [node name="banana6" parent="bananas" unique_id=1363440032 instance=ExtResource("5_t7v7a")]
-position = Vector2(325.66666, 158.33333)
+position = Vector2(376, 135)
 
 [node name="banana7" parent="bananas" unique_id=275710312 instance=ExtResource("5_t7v7a")]
-position = Vector2(146.33333, 59.333336)
+position = Vector2(128.66666, 20)
 
 [node name="banana8" parent="bananas" unique_id=1884733827 instance=ExtResource("5_t7v7a")]
 position = Vector2(372.66666, 46.666668)
@@ -343,12 +355,36 @@ position = Vector2(102.333336, 177)
 [node name="MovingPlatform5" parent="Node2D" unique_id=1645193862 instance=ExtResource("7_f62st")]
 position = Vector2(228, 85.66667)
 
-[node name="levelMessage" type="RichTextLabel" parent="." unique_id=1869488004]
-texture_filter = 1
-offset_left = 97.0
-offset_top = 98.333336
-offset_right = 329.33334
-offset_bottom = 141.33334
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=118905587]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=541177811]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -242.0
+offset_top = -38.0
+offset_right = 258.0
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_heu5o")
+
+[node name="levelMessage" type="Label" parent="CanvasLayer/Panel" unique_id=848129902]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = -16.0
+offset_right = 160.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_s45gt")
+theme_override_font_sizes/font_size = 32
 text = "If you fall down, you lose!"
-horizontal_alignment = 1
-vertical_alignment = 1

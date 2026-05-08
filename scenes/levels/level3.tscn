@@ -285,16 +285,28 @@ position = Vector2(303.66666, 222)
 [node name="bananas" type="Node2D" parent="." unique_id=28804083]
 
 [node name="banana" parent="bananas" unique_id=985510749 instance=ExtResource("5_oyk6k")]
-position = Vector2(204.33333, 8)
+position = Vector2(212, 8)
+
+[node name="banana6" parent="bananas" unique_id=854366621 instance=ExtResource("5_oyk6k")]
+position = Vector2(237, 66.66667)
+
+[node name="banana7" parent="bananas" unique_id=475360354 instance=ExtResource("5_oyk6k")]
+position = Vector2(390.6667, 131.33334)
+
+[node name="banana5" parent="bananas" unique_id=991017842 instance=ExtResource("5_oyk6k")]
+position = Vector2(334.6667, 93.66667)
 
 [node name="banana2" parent="bananas" unique_id=992249237 instance=ExtResource("5_oyk6k")]
-position = Vector2(187, 95.33333)
+position = Vector2(178.66667, 98.666664)
 
 [node name="banana3" parent="bananas" unique_id=1042392723 instance=ExtResource("5_oyk6k")]
 position = Vector2(461.6667, -6.666668)
 
+[node name="banana8" parent="bananas" unique_id=697850157 instance=ExtResource("5_oyk6k")]
+position = Vector2(296.33334, 13)
+
 [node name="banana4" parent="bananas" unique_id=1197905344 instance=ExtResource("5_oyk6k")]
-position = Vector2(377, 5.666664)
+position = Vector2(377.66666, 4.333333)
 
 [node name="Flag" type="AnimatedSprite2D" parent="." unique_id=270753190]
 texture_filter = 1
@@ -314,7 +326,7 @@ shape = SubResource("RectangleShape2D_1seuy")
 [node name="Node2D" type="Node2D" parent="." unique_id=1548954325]
 
 [node name="MovingPlatform" parent="Node2D" unique_id=328821104 instance=ExtResource("7_f7rt6")]
-position = Vector2(191.66667, 132.66667)
+position = Vector2(173, 134.66667)
 
 [node name="MovingPlatform2" parent="Node2D" unique_id=377924882 instance=ExtResource("7_f7rt6")]
 position = Vector2(258.66666, 169.33334)
@@ -326,4 +338,4 @@ position = Vector2(329.33334, 123.333336)
 position = Vector2(102.333336, 177)
 
 [node name="MovingPlatform5" parent="Node2D" unique_id=1645193862 instance=ExtResource("7_f7rt6")]
-position = Vector2(228, 85.66667)
+position = Vector2(218.33333, 85.66667)

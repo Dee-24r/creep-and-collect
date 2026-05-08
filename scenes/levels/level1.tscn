@@ -293,7 +293,7 @@ position = Vector2(187, 95.33333)
 position = Vector2(461.6667, -6.666668)
 
 [node name="banana4" parent="bananas" unique_id=1197905344 instance=ExtResource("5_dywbp")]
-position = Vector2(377, 5.666664)
+position = Vector2(375.33334, 6.333333)
 
 [node name="Flag" type="AnimatedSprite2D" parent="." unique_id=270753190]
 texture_filter = 1

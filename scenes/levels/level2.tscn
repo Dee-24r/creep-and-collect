@@ -389,10 +389,10 @@ scale = Vector2(3, 3)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=386706403]
 texture_filter = 1
-offset_left = 0.33333302
-offset_top = -9.666668
-offset_right = 433.0
-offset_bottom = 240.33334
+offset_left = 1.333333
+offset_top = -11.333334
+offset_right = 434.0
+offset_bottom = 238.6667
 texture = ExtResource("1_ok6xr")
 stretch_mode = 1
 
@@ -403,7 +403,7 @@ tile_map_data = PackedByteArray("AAAAAA0AAAAHAAEAAAATAAQAAAAMAAkAAAAaAA4AAAAIAAI
 tile_set = SubResource("TileSet_dd0lh")
 
 [node name="player" parent="." unique_id=223711073 instance=ExtResource("3_k0mew")]
-position = Vector2(45, 186.66667)
+position = Vector2(40.333332, 185)
 scale = Vector2(1, 1)
 
 [node name="enemies" type="Node2D" parent="." unique_id=309691048]
@@ -415,7 +415,7 @@ position = Vector2(348, 228.33333)
 position = Vector2(403.33334, 168.66667)
 
 [node name="snail5" parent="enemies" unique_id=1830908271 instance=ExtResource("4_b0vvs")]
-position = Vector2(149, 225.33334)
+position = Vector2(153.66667, 223.00002)
 
 [node name="snail" parent="enemies" unique_id=1245770165 instance=ExtResource("4_b0vvs")]
 position = Vector2(398.6667, 22.666666)
@@ -423,22 +423,22 @@ position = Vector2(398.6667, 22.666666)
 [node name="bananas" type="Node2D" parent="." unique_id=28804083]
 
 [node name="banana" parent="bananas" unique_id=985510749 instance=ExtResource("5_oyk6k")]
-position = Vector2(204.33333, 8)
+position = Vector2(172.66666, 21.333334)
 
-[node name="banana6" parent="bananas" unique_id=2053247762 instance=ExtResource("5_oyk6k")]
-position = Vector2(215.66667, 169.33333)
+[node name="banana5" parent="bananas" unique_id=788455718 instance=ExtResource("5_oyk6k")]
+position = Vector2(254, -10.333334)
 
-[node name="banana5" parent="bananas" unique_id=12577500 instance=ExtResource("5_oyk6k")]
-position = Vector2(290.66666, -20.666668)
+[node name="banana3" parent="bananas" unique_id=829144003 instance=ExtResource("5_oyk6k")]
+position = Vector2(469, 6.333334)
 
-[node name="banana2" parent="bananas" unique_id=992249237 instance=ExtResource("5_oyk6k")]
-position = Vector2(330, 79)
+[node name="banana2" parent="bananas" unique_id=1485096454 instance=ExtResource("5_oyk6k")]
+position = Vector2(378, 4.666666)
 
-[node name="banana3" parent="bananas" unique_id=1042392723 instance=ExtResource("5_oyk6k")]
-position = Vector2(461.6667, -6.666668)
+[node name="banana6" parent="bananas" unique_id=1552138790 instance=ExtResource("5_oyk6k")]
+position = Vector2(245, 52.666664)
 
-[node name="banana4" parent="bananas" unique_id=1197905344 instance=ExtResource("5_oyk6k")]
-position = Vector2(376, 7.3333335)
+[node name="banana4" parent="bananas" unique_id=187884972 instance=ExtResource("5_oyk6k")]
+position = Vector2(356.66666, 68)
 
 [node name="Flag" type="AnimatedSprite2D" parent="." unique_id=270753190]
 texture_filter = 1
