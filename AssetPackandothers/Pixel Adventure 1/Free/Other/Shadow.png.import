@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1q18pp8ycqwo"
-path="res://.godot/imported/Shadow.png-83f2bac22f74bdc7bf94656dcbe89ddf.ctex"
+path="res://.godot/imported/Shadow.png-078002e538b199888a57ad4b9f5f592e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Other/Shadow.png"
-dest_files=["res://.godot/imported/Shadow.png-83f2bac22f74bdc7bf94656dcbe89ddf.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Other/Shadow.png"
+dest_files=["res://.godot/imported/Shadow.png-078002e538b199888a57ad4b9f5f592e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q4hduxlo3yeb"
-path="res://.godot/imported/HitSide (22x22).png-fedc992994c505e16f6fd2aa1207b954.ctex"
+path="res://.godot/imported/HitSide (22x22).png-5950124007ddac6920a24329f0e96cbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Traps/Blocks/HitSide (22x22).png"
-dest_files=["res://.godot/imported/HitSide (22x22).png-fedc992994c505e16f6fd2aa1207b954.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Traps/Blocks/HitSide (22x22).png"
+dest_files=["res://.godot/imported/HitSide (22x22).png-5950124007ddac6920a24329f0e96cbb.ctex"]
 
 [params]
 

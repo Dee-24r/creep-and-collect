@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr1t4c5sfuujx"
-path="res://.godot/imported/22.png-40b56e425394a5ae211470c65e2033bf.ctex"
+uid="uid://bdy8fnsrwuf2f"
+path="res://.godot/imported/menu.png-09788ebfe49b6ddbddfddd3ff6e0248b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Menu/Levels/22.png"
-dest_files=["res://.godot/imported/22.png-40b56e425394a5ae211470c65e2033bf.ctex"]
+source_file="res://images/menu.png"
+dest_files=["res://.godot/imported/menu.png-09788ebfe49b6ddbddfddd3ff6e0248b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i4mxsutad370"
-path="res://.godot/imported/Wall Jump (32x32).png-6c95bac88382b3acdd7caced3883ec6a.ctex"
+path="res://.godot/imported/Wall Jump (32x32).png-76472e3650313b5ba5bc6911ea29ec8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Main Characters/Mask Dude/Wall Jump (32x32).png"
-dest_files=["res://.godot/imported/Wall Jump (32x32).png-6c95bac88382b3acdd7caced3883ec6a.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Main Characters/Mask Dude/Wall Jump (32x32).png"
+dest_files=["res://.godot/imported/Wall Jump (32x32).png-76472e3650313b5ba5bc6911ea29ec8f.ctex"]
 
 [params]
 

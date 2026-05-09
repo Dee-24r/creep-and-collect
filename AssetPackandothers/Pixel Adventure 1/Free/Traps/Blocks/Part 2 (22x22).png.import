@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk06kidbkptxi"
-path="res://.godot/imported/Part 2 (22x22).png-1badb3de7a136305abd293e87f67cab8.ctex"
+path="res://.godot/imported/Part 2 (22x22).png-91641b563c2463aab6a850ddfe0797f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Traps/Blocks/Part 2 (22x22).png"
-dest_files=["res://.godot/imported/Part 2 (22x22).png-1badb3de7a136305abd293e87f67cab8.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Traps/Blocks/Part 2 (22x22).png"
+dest_files=["res://.godot/imported/Part 2 (22x22).png-91641b563c2463aab6a850ddfe0797f1.ctex"]
 
 [params]
 

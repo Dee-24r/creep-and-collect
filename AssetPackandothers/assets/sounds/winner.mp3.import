@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://oc7ma53um3mv"
-path="res://.godot/imported/winner.mp3-f5e3005edc44a794e814523e04eea4f8.mp3str"
+path="res://.godot/imported/winner.mp3-0a75e36f110aa516607c3e1d1d413519.mp3str"
 
 [deps]
 
-source_file="res://MyGame/assets/sounds/winner.mp3"
-dest_files=["res://.godot/imported/winner.mp3-f5e3005edc44a794e814523e04eea4f8.mp3str"]
+source_file="res://AssetPackandothers/assets/sounds/winner.mp3"
+dest_files=["res://.godot/imported/winner.mp3-0a75e36f110aa516607c3e1d1d413519.mp3str"]
 
 [params]
 

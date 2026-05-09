@@ -1,11 +1,11 @@
 extends Node2D
 var LASTLEVEL = 4
 var score: int = 0
-var level: int = 1
+var level: int = 3
 var current_level_root:Node = null
 var is_loading: bool = false
 var time_elapsed: int = 0
-var time_left: int = 10
+var time_left: int = 150
 
 @onready var fade: ColorRect = $display/Fade
 @onready var score_label: Label = $display/scorePanel/score_Label

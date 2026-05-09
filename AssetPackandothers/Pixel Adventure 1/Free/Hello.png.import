@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtll8hdus1px2"
-path="res://.godot/imported/Hello.png-c98ca37416657f5bb2099f39ab21562d.ctex"
+path="res://.godot/imported/Hello.png-64b10bdb4b06754f7b4df2bc87f94410.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Hello.png"
-dest_files=["res://.godot/imported/Hello.png-c98ca37416657f5bb2099f39ab21562d.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Hello.png"
+dest_files=["res://.godot/imported/Hello.png-64b10bdb4b06754f7b4df2bc87f94410.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmnkywicnuqq1"
-path="res://.godot/imported/Blue.png-ebcba5e363c38704b3ebbe16d13c87e2.ctex"
+path="res://.godot/imported/Blue.png-540bb71a095204132ef4252ce109195b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Background/Blue.png"
-dest_files=["res://.godot/imported/Blue.png-ebcba5e363c38704b3ebbe16d13c87e2.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Background/Blue.png"
+dest_files=["res://.godot/imported/Blue.png-540bb71a095204132ef4252ce109195b.ctex"]
 
 [params]
 

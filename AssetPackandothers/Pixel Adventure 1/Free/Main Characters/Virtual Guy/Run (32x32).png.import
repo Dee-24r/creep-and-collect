@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi3hw7cuvlfx"
-path="res://.godot/imported/Run (32x32).png-8549edaaea5479e9f1b1a6e6841ad9fd.ctex"
+path="res://.godot/imported/Run (32x32).png-81635efe16ea18e588eb0960ea693b27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Main Characters/Virtual Guy/Run (32x32).png"
-dest_files=["res://.godot/imported/Run (32x32).png-8549edaaea5479e9f1b1a6e6841ad9fd.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Main Characters/Virtual Guy/Run (32x32).png"
+dest_files=["res://.godot/imported/Run (32x32).png-81635efe16ea18e588eb0960ea693b27.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djlu8x52s70d3"
-path="res://.godot/imported/Blink (54x52).png-7871ed5f38a1d63264bc637f1eb268de.ctex"
+path="res://.godot/imported/Blink (54x52).png-371ba123e7bc99a9ff539edcfe509f16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Traps/Spike Head/Blink (54x52).png"
-dest_files=["res://.godot/imported/Blink (54x52).png-7871ed5f38a1d63264bc637f1eb268de.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Traps/Spike Head/Blink (54x52).png"
+dest_files=["res://.godot/imported/Blink (54x52).png-371ba123e7bc99a9ff539edcfe509f16.ctex"]
 
 [params]
 

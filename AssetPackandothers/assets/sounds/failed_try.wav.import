@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dnn6e834lmwpc"
-path="res://.godot/imported/failed_try.wav-598891ff0b569c63ae86fdb1e9d65526.sample"
+path="res://.godot/imported/failed_try.wav-2d1d64ee0c07fadd269c83c2095a8c15.sample"
 
 [deps]
 
-source_file="res://MyGame/assets/sounds/failed_try.wav"
-dest_files=["res://.godot/imported/failed_try.wav-598891ff0b569c63ae86fdb1e9d65526.sample"]
+source_file="res://AssetPackandothers/assets/sounds/failed_try.wav"
+dest_files=["res://.godot/imported/failed_try.wav-2d1d64ee0c07fadd269c83c2095a8c15.sample"]
 
 [params]
 

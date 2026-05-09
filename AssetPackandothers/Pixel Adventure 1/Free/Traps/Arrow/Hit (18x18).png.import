@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caqnxk27456y7"
-path="res://.godot/imported/Hit (18x18).png-c9818bba756a92d935f52c0add025433.ctex"
+path="res://.godot/imported/Hit (18x18).png-8f1f4b44d22dfb788d0941735c399e4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/Pixel Adventure 1/Free/Traps/Arrow/Hit (18x18).png"
-dest_files=["res://.godot/imported/Hit (18x18).png-c9818bba756a92d935f52c0add025433.ctex"]
+source_file="res://AssetPackandothers/Pixel Adventure 1/Free/Traps/Arrow/Hit (18x18).png"
+dest_files=["res://.godot/imported/Hit (18x18).png-8f1f4b44d22dfb788d0941735c399e4b.ctex"]
 
 [params]
 

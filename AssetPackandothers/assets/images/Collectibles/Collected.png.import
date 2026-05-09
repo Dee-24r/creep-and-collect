@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1kf8qxdu3bc4"
-path="res://.godot/imported/Collected.png-9169aa8abe729657934619b24fffdd5a.ctex"
+path="res://.godot/imported/Collected.png-37420ea0ee5fdd323a2d31e48be6434a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyGame/assets/images/Collectibles/Collected.png"
-dest_files=["res://.godot/imported/Collected.png-9169aa8abe729657934619b24fffdd5a.ctex"]
+source_file="res://AssetPackandothers/assets/images/Collectibles/Collected.png"
+dest_files=["res://.godot/imported/Collected.png-37420ea0ee5fdd323a2d31e48be6434a.ctex"]
 
 [params]
 
