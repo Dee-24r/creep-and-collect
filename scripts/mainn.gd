@@ -1,7 +1,7 @@
 extends Node2D
 var LASTLEVEL = 4
 var score: int = 0
-var level: int = 4
+var level: int = 1
 var current_level_root:Node = null
 var is_loading: bool = false
 
