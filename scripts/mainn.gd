@@ -1,17 +1,28 @@
 extends Node2D
 var LASTLEVEL = 4
 var score: int = 0
-var level: int = 4
+var level: int = 1
 var current_level_root:Node = null
 var is_loading: bool = false
-
+var time_elapsed: int = 0
 @onready var fade: ColorRect = $display/Fade
 @onready var score_label: Label = $display/scorePanel/score_Label
+@onready var ultimatewinn: CanvasLayer = $ultimatewinn
+@onready var ultimatewinnersound: AudioStreamPlayer2D = $ultimatewinn/ultimatewinnersound
+@onready var background_music: AudioStreamPlayer2D = $backgroundMusic
+@onready var stopwatch_label: Label = $stopwatch/Panel/stopwatchLabel
+@onready var timer: Timer = $Timer
 
 signal win
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	timer.timeout.connect(_timer)
+	timer.start()
+	
+	ultimatewinn.visible = false
 	#setup level
 	fade.modulate.a = 1.0
 	current_level_root = get_node("LevelRoot")
@@ -31,8 +42,10 @@ func _load_level(level_number: int, first_load: bool, reset_score: bool) -> void
 	if reset_score:
 		score = 0
 		score_label.text = "SCORE: 0"
+	
 	if current_level_root:
 		current_level_root.queue_free()
+		await get_tree().process_frame
 		
 	var level_path = "res://scenes/levels/level%s.tscn" %level_number
 	current_level_root = load(level_path).instantiate()
@@ -74,12 +87,12 @@ func _setup_level(level_root: Node) -> void:
 func _on_exit_body_entered(body: Node2D)-> void:
 	if body.name == "player":
 		
+		#trying to debug the message displaying twice
+		#but ultimately didn't work!
 		if is_loading:
 			return
 			
 		if level >= LASTLEVEL:
-			print("Game completed")
-			_winner()
 			return
 		
 		level+=1
@@ -89,6 +102,10 @@ func _on_exit_body_entered(body: Node2D)-> void:
 func _on_player_failed(body):
 	body.fail()
 	level = 1
+	
+	time_elapsed = 0
+	stopwatch_label.text = "00:00"
+	
 	await _load_level(level, false, true)
 
 func _winner() -> void:
@@ -96,14 +113,25 @@ func _winner() -> void:
 	winning_sound.play()
 	emit_signal("win")
 
-
 func _increase_score() -> void:
 	score += 5
 	score_label.text = "SCORE: %s" % score
-	if score == 20 || score == 50 || score == 90 || score == 120:
+	if score == 20 || score == 50 || score == 90:
 		_winner()
+	if score == 135:
+		_show_ultimate_win()
 		
 
+func _timer()-> void:
+	time_elapsed += 1
+	
+	var minutes = time_elapsed/60
+	var seconds = time_elapsed%60
+	
+	stopwatch_label.text = "%02d:%02d" %[minutes, seconds]
+	
+	
+	
 #--------------------------
 #THE FADE PART
 #--------------------------
@@ -113,7 +141,12 @@ func _fade(to_alpha: float) -> void:
 	tween.tween_property(fade, "modulate:a", to_alpha, 1.5)
 	await tween.finished
 
-
+func _show_ultimate_win() -> void:
+	timer.stop()
+	ultimatewinn.visible = true
+	background_music.stop()
+	ultimatewinnersound.play()
+	
 
 func _display_message() -> void:
 		var canvas_layer = current_level_root.get_node_or_null("CanvasLayer")

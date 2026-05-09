@@ -331,7 +331,7 @@ autoplay = "default"
 flip_h = true
 
 [node name="Exit" type="Area2D" parent="." unique_id=1752158626]
-position = Vector2(442.33334, 47)
+position = Vector2(439, 47)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit" unique_id=1555313781]
@@ -358,7 +358,6 @@ position = Vector2(228, 85.66667)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=118905587]
 
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=541177811]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -387,4 +386,4 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("8_s45gt")
 theme_override_font_sizes/font_size = 32
-text = "If you fall down, you lose!"
+text = "No floors! If you fall down, you lose!"
