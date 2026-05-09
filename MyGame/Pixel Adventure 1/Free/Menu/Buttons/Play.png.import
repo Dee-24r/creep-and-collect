@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0irtu6by1p0p"
-path="res://.godot/imported/Play.png-d6cd2b298d41eb55ef219030f4be1513.ctex"
+path="res://.godot/imported/Play.png-ddd26da77711453699e7577e075f7e89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Menu/Buttons/Play.png"
-dest_files=["res://.godot/imported/Play.png-d6cd2b298d41eb55ef219030f4be1513.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Menu/Buttons/Play.png"
+dest_files=["res://.godot/imported/Play.png-ddd26da77711453699e7577e075f7e89.ctex"]
 
 [params]
 

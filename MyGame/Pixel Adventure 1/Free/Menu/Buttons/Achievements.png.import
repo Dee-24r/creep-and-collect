@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm5af4xpjwfkl"
-path="res://.godot/imported/Achievements.png-350afba77ca654021df694ec87b822cc.ctex"
+path="res://.godot/imported/Achievements.png-bf6a3358f27e07e01efd8ae53722d447.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Menu/Buttons/Achievements.png"
-dest_files=["res://.godot/imported/Achievements.png-350afba77ca654021df694ec87b822cc.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Menu/Buttons/Achievements.png"
+dest_files=["res://.godot/imported/Achievements.png-bf6a3358f27e07e01efd8ae53722d447.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwmyg3wtl0x5h"
-path="res://.godot/imported/Checkpoint (Flag Idle)(64x64).png-9fbf88402c3f99ef9d50bab7c6e2d316.ctex"
+path="res://.godot/imported/Checkpoint (Flag Idle)(64x64).png-266f3eafcad4bae5093855d67e1cc527.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/assets/images/Tilemap/Checkpoint (Flag Idle)(64x64).png"
-dest_files=["res://.godot/imported/Checkpoint (Flag Idle)(64x64).png-9fbf88402c3f99ef9d50bab7c6e2d316.ctex"]
+source_file="res://MyGame/assets/images/Tilemap/Checkpoint (Flag Idle)(64x64).png"
+dest_files=["res://.godot/imported/Checkpoint (Flag Idle)(64x64).png-266f3eafcad4bae5093855d67e1cc527.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duu20pkmj1ogg"
-path="res://.godot/imported/Hit (32x32).png-7d574b4a7c92bbc73e9124107ef8ad2b.ctex"
+path="res://.godot/imported/Hit (32x32).png-5143bdf6108cede7f396ed7eff9ff987.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Main Characters/Virtual Guy/Hit (32x32).png"
-dest_files=["res://.godot/imported/Hit (32x32).png-7d574b4a7c92bbc73e9124107ef8ad2b.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Main Characters/Virtual Guy/Hit (32x32).png"
+dest_files=["res://.godot/imported/Hit (32x32).png-5143bdf6108cede7f396ed7eff9ff987.ctex"]
 
 [params]
 

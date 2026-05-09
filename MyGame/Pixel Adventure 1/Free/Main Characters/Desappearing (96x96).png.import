@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2o8xnrteqrdi"
-path="res://.godot/imported/Desappearing (96x96).png-ccc2c4cacedf9f99bf0f561b94795ff2.ctex"
+path="res://.godot/imported/Desappearing (96x96).png-1b324e4b5fb17b304db1c58a27ee0927.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Main Characters/Desappearing (96x96).png"
-dest_files=["res://.godot/imported/Desappearing (96x96).png-ccc2c4cacedf9f99bf0f561b94795ff2.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Main Characters/Desappearing (96x96).png"
+dest_files=["res://.godot/imported/Desappearing (96x96).png-1b324e4b5fb17b304db1c58a27ee0927.ctex"]
 
 [params]
 

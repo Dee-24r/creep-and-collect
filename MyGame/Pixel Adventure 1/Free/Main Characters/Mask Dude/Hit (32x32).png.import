@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3x74sv3il056"
-path="res://.godot/imported/Hit (32x32).png-24f5250b25c99fcf5fa324e9751aad0b.ctex"
+path="res://.godot/imported/Hit (32x32).png-fa8e2e574409353f01df1821c291d077.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Main Characters/Mask Dude/Hit (32x32).png"
-dest_files=["res://.godot/imported/Hit (32x32).png-24f5250b25c99fcf5fa324e9751aad0b.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Main Characters/Mask Dude/Hit (32x32).png"
+dest_files=["res://.godot/imported/Hit (32x32).png-fa8e2e574409353f01df1821c291d077.ctex"]
 
 [params]
 

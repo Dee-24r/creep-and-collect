@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwnil8f1e5nd7"
-path="res://.godot/imported/Idle.png-93fdeb98406b50b103562d2ac5e07d71.ctex"
+path="res://.godot/imported/Idle.png-49139ef070b2e8d491dbd75c31a2703e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Traps/Rock Head/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-93fdeb98406b50b103562d2ac5e07d71.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Traps/Rock Head/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-49139ef070b2e8d491dbd75c31a2703e.ctex"]
 
 [params]
 

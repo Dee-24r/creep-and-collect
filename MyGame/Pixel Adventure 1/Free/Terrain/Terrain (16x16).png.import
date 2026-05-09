@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqt8cno8knygd"
-path="res://.godot/imported/Terrain (16x16).png-992b3f3e92d7bd66263fd5ff7a1de940.ctex"
+path="res://.godot/imported/Terrain (16x16).png-f1b6b17c469a537840c85607e0491f04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png"
-dest_files=["res://.godot/imported/Terrain (16x16).png-992b3f3e92d7bd66263fd5ff7a1de940.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png"
+dest_files=["res://.godot/imported/Terrain (16x16).png-f1b6b17c469a537840c85607e0491f04.ctex"]
 
 [params]
 

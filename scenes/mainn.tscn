@@ -3,13 +3,9 @@
 [ext_resource type="Script" uid="uid://4llfch8j2q8q" path="res://scripts/mainn.gd" id="1_4aalk"]
 [ext_resource type="PackedScene" uid="uid://ctjo2oo8wm3wa" path="res://scenes/levels/level1.tscn" id="3_hrtbl"]
 [ext_resource type="FontFile" uid="uid://cjv6cp62ouy5x" path="res://assets/fontfile/Square-Black.ttf" id="3_p1trg"]
-<<<<<<< HEAD
 [ext_resource type="AudioStream" uid="uid://d4ei2by07awta" path="res://assets/sounds/music.mp3" id="4_lgrci"]
 [ext_resource type="PackedScene" uid="uid://dhkdafripuh28" path="res://scenes/ultimatewinn.tscn" id="5_lgrci"]
 [ext_resource type="AudioStream" uid="uid://6ssrmkiycig3" path="res://assets/sounds/ultimatewinner.mp3" id="6_dmukv"]
-=======
-[ext_resource type="AudioStream" uid="uid://dpur4lsm0y04q" path="res://assets/sounds/togun.mp3" id="4_p1trg"]
->>>>>>> dea2e74376498a4293cf002f525e4bc8809f0fde
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4aalk"]
 bg_color = Color(0.6645613, 0.7370931, 0.7881945, 1)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0bv4rj3cgf27"
-path="res://.godot/imported/On (32x10).png-7fa027bc099d0a22a18c54090244e27a.ctex"
+path="res://.godot/imported/On (32x10).png-1881de76d7328615c192c38c58dfd85b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Traps/Falling Platforms/On (32x10).png"
-dest_files=["res://.godot/imported/On (32x10).png-7fa027bc099d0a22a18c54090244e27a.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Traps/Falling Platforms/On (32x10).png"
+dest_files=["res://.godot/imported/On (32x10).png-1881de76d7328615c192c38c58dfd85b.ctex"]
 
 [params]
 

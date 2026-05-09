@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dno8xxa44v4gt"
-path="res://.godot/imported/Run (32x32).png-cfb63b3acd6deede5b4dcb34192ce5df.ctex"
+path="res://.godot/imported/Run (32x32).png-1843146397cb494eaaede4da226a87ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/assets/images/Pink Man/Run (32x32).png"
-dest_files=["res://.godot/imported/Run (32x32).png-cfb63b3acd6deede5b4dcb34192ce5df.ctex"]
+source_file="res://MyGame/assets/images/Pink Man/Run (32x32).png"
+dest_files=["res://.godot/imported/Run (32x32).png-1843146397cb494eaaede4da226a87ba.ctex"]
 
 [params]
 

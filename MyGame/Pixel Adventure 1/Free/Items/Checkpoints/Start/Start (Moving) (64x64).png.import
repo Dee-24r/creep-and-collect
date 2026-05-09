@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwkn60bgx37d8"
-path="res://.godot/imported/Start (Moving) (64x64).png-9b5347f36839e99d8ed94dd94d4e3eb0.ctex"
+path="res://.godot/imported/Start (Moving) (64x64).png-4278ab09b2574e29caaaeef51901d7e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assetpack/Pixel Adventure 1/Free/Items/Checkpoints/Start/Start (Moving) (64x64).png"
-dest_files=["res://.godot/imported/Start (Moving) (64x64).png-9b5347f36839e99d8ed94dd94d4e3eb0.ctex"]
+source_file="res://MyGame/Pixel Adventure 1/Free/Items/Checkpoints/Start/Start (Moving) (64x64).png"
+dest_files=["res://.godot/imported/Start (Moving) (64x64).png-4278ab09b2574e29caaaeef51901d7e6.ctex"]
 
 [params]
 
