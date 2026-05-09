@@ -5,27 +5,31 @@ var level: int = 1
 var current_level_root:Node = null
 var is_loading: bool = false
 var time_elapsed: int = 0
+var time_left: int = 10
+
 @onready var fade: ColorRect = $display/Fade
 @onready var score_label: Label = $display/scorePanel/score_Label
 @onready var ultimatewinn: CanvasLayer = $ultimatewinn
 @onready var ultimatewinnersound: AudioStreamPlayer2D = $ultimatewinn/ultimatewinnersound
 @onready var background_music: AudioStreamPlayer2D = $backgroundMusic
 @onready var stopwatch_label: Label = $stopwatch/Panel/stopwatchLabel
-@onready var timer: Timer = $Timer
+@onready var timer_count: Timer = $Timer
 
 signal win
 
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	timer.timeout.connect(_timer)
-	timer.start()
-	
 	ultimatewinn.visible = false
+	
 	#setup level
 	fade.modulate.a = 1.0
 	current_level_root = get_node("LevelRoot")
+	
+	#timer
+	if GameMenu.game_mode!=null:
+		timer_count.timeout.connect(_timer)
+		timer_count.start()
+		
 	await _load_level(level, true, false)
 
 #LEVEL MANAGEMENTTT!
@@ -82,7 +86,6 @@ func _setup_level(level_root: Node) -> void:
 		
 		
 		
-		
 #signals
 func _on_exit_body_entered(body: Node2D)-> void:
 	if body.name == "player":
@@ -123,14 +126,35 @@ func _increase_score() -> void:
 		
 
 func _timer()-> void:
-	time_elapsed += 1
+	if GameMenu.game_mode == "stopwatch_mode":
+		
+		time_elapsed += 1
 	
-	var minutes = time_elapsed/60
-	var seconds = time_elapsed%60
+		var minutes = time_elapsed/60
+		var seconds = time_elapsed%60
+		stopwatch_label.text = "%02d:%02d" %[minutes, seconds]
+		
 	
-	stopwatch_label.text = "%02d:%02d" %[minutes, seconds]
+	elif GameMenu.game_mode == "timer_mode":
+		time_left -=1
+		
+		var minutes = time_left/60
+		var seconds = time_left%60
+		stopwatch_label.text = "%02d:%02d" %[minutes, seconds]
+		
+		if time_left <= 0:
+			_time_up()
 	
+
+func _time_up()-> void:
+	timer_count.stop()
+	print("Time up, suckerr!")
 	
+	if current_level_root:
+		var player = current_level_root.get_node_or_null("player")
+		if player:
+			player.player_failed.connect(_on_player_failed)
+			_on_player_failed(player)
 	
 #--------------------------
 #THE FADE PART
@@ -142,7 +166,7 @@ func _fade(to_alpha: float) -> void:
 	await tween.finished
 
 func _show_ultimate_win() -> void:
-	timer.stop()
+	timer_count.stop()
 	ultimatewinn.visible = true
 	background_music.stop()
 	ultimatewinnersound.play()

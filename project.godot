@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="FirstGame"
-run/main_scene="uid://bc6naici523a1"
+run/main_scene="uid://baa2gp6m1cqto"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameMenu="*uid://cld3flqtpyanl"
 
 [display]
 

@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://baa2gp6m1cqto"]
+
+[ext_resource type="Script" uid="uid://cld3flqtpyanl" path="res://scripts/game_menu.gd" id="1_qdaa4"]
+[ext_resource type="FontFile" uid="uid://cjv6cp62ouy5x" path="res://assets/fontfile/Square-Black.ttf" id="2_vrsc2"]
+[ext_resource type="Texture2D" uid="uid://cmlqiqnt08jt1" path="res://assets/images/background/Brown.png" id="2_ysvk1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ysvk1"]
+bg_color = Color(0.5058824, 0.5058824, 0.88235295, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.13725491, 0.8, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mw6r2"]
+bg_color = Color(0.29803923, 0.11372549, 0.58431375, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ldg7d"]
+bg_color = Color(0.18039216, 0.0627451, 0.39607844, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aru3y"]
+bg_color = Color(0.4862745, 0.22745098, 0.92941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0b27c"]
+bg_color = Color(0.29803923, 0.11372549, 0.58431375, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7bbo"]
+bg_color = Color(0.18039216, 0.0627451, 0.39607844, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2u6m"]
+bg_color = Color(0.4862745, 0.22745098, 0.92941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yr8n5"]
+bg_color = Color(0.5058824, 0.5058824, 0.88235295, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u3xmg"]
+bg_color = Color(0.36862746, 0.36862746, 0.72156864, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qoecg"]
+bg_color = Color(0.6039216, 0.6039216, 0.9490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p30b5"]
+bg_color = Color(0.24705882, 0.24705882, 0.4, 1)
+
+[node name="GameMenu" type="Control" unique_id=910238917]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qdaa4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1693639022]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_ysvk1")
+stretch_mode = 1
+
+[node name="Panel" type="Panel" parent="TextureRect" unique_id=956266253]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -450.0
+offset_top = 40.0
+offset_right = 450.0
+offset_bottom = 190.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ysvk1")
+
+[node name="Text" type="Label" parent="TextureRect/Panel" unique_id=1693250588]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.43300003
+offset_left = -503.0
+offset_top = 19.0
+offset_right = 504.0
+offset_bottom = 84.049995
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_vrsc2")
+theme_override_font_sizes/font_size = 70
+text = "Choose your Game mode!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="timerBtn" type="Button" parent="TextureRect" unique_id=1064713902]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 257.0
+offset_right = 1055.0
+offset_bottom = 462.0
+theme_override_fonts/font = ExtResource("2_vrsc2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mw6r2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ldg7d")
+theme_override_styles/hover = SubResource("StyleBoxFlat_aru3y")
+text = "Beat the clock"
+
+[node name="stopwatchBtn" type="Button" parent="TextureRect" unique_id=737641311]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 257.0
+offset_right = 595.0
+offset_bottom = 462.0
+theme_override_fonts/font = ExtResource("2_vrsc2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_0b27c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v7bbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l2u6m")
+text = "Endless Mode"
+
+[node name="startGame" type="Button" parent="TextureRect" unique_id=1623640980]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 510.0
+offset_right = 948.0
+offset_bottom = 683.0
+theme_override_fonts/font = ExtResource("2_vrsc2")
+theme_override_font_sizes/font_size = 95
+theme_override_styles/normal = SubResource("StyleBoxFlat_yr8n5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u3xmg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qoecg")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_p30b5")
+disabled = true
+text = "Begin!"
+
+[connection signal="pressed" from="TextureRect/timerBtn" to="." method="_on_timer_btn_pressed"]
+[connection signal="pressed" from="TextureRect/stopwatchBtn" to="." method="_on_stopwatch_btn_pressed"]
+[connection signal="pressed" from="TextureRect/startGame" to="." method="_on_start_game_pressed"]
